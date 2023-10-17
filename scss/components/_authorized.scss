@@ -1,0 +1,132 @@
+.authorized {
+  width: 100%;
+  height: auto;
+  padding: 84px 0px;
+
+  .container {
+    @include flex-center-center;
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 38px;
+    text-align: center;
+    color: #034ea2;
+    font-family: "Poppins";
+    margin-bottom: 60px;
+
+    @media (max-width: 900px) {
+      font-size: 28px;
+      line-height: 31px;
+    }
+  }
+
+  &__grid {
+    width: 100%;
+    @include flex-center-center;
+
+    @media (max-width: 1100px) {
+      flex-direction: column-reverse;
+    }
+
+    &__list {
+      width: 42%;
+      padding-left: 20px;
+
+      @media (max-width: 1650px) {
+        width: 40%;
+      }
+
+      @media (max-width: 1100px) {
+        width: 100%;
+        @include flex-center-center;
+        margin-top: 60px;
+        flex-direction: column;
+      }
+
+      li {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 38px;
+
+        @media (max-width: 1460px) {
+          font-size: 17px;
+          line-height: 24px;
+        }
+
+        @media (max-width: 1100px) {
+          text-align: left;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 25px;
+        }
+
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+
+    &__images {
+      width: 70%;
+      @include flex-center-center;
+      gap: 22px;
+      flex-wrap: wrap;
+
+      @media (max-width: 1650px) {
+        width: 60%;
+      }
+
+      @media (max-width: 1100px) {
+        width: 100%;
+      }
+
+      &__individual {
+        @include flex-center-center;
+        flex-direction: column;
+
+        img {
+          width: 100%;
+          max-width: 300px;
+          height: auto;
+          margin-bottom: 30px;
+
+          @media (max-width: 1650px) {
+            max-width: 270px;
+          }
+
+          @media (max-width: 1460px) {
+            max-width: 220px;
+          }
+
+          @media (max-width: 1100px) {
+            max-width: 270px;
+          }
+        }
+
+        p {
+          font-size: 18px;
+          line-height: 18px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  &__button {
+    margin-top: 60px;
+    background: #034ea2;
+    border-radius: 50px;
+    color: $white;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    padding: 21px 105px;
+
+    @media (max-width: 1100px) {
+      font-size: 17px;
+      padding: 21px 45px;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.risk{
+	width: 100%;
+	height: auto;
+	background-image: url('../img/risk.png');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	padding: 71px 0px;
+
+	&__blackout{
+		width: 100%;
+		height: 100%;
+		background: #000000a6;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+	
+	.container{
+		@include flex-center-center;
+		flex-direction: column;
+	}
+
+	h2{
+		position: relative;
+		z-index: 2;
+		color: $white;
+		font-family: 'Poppins';
+		font-size: 38px;
+		text-align: center;
+
+		@media (max-width: 1100px) {
+			font-size: 28px;
+		}
+
+	}
+
+	p{
+		position: relative;
+		margin-top: 37px;
+		z-index: 2;
+		color: $white;
+		font-family: 'Poppins';
+		font-size: 18px;
+		text-align: center;
+
+		@media (max-width: 1100px) {
+			font-size: 17px;
+		}
+
+	}
+
+	a{
+		position: relative;
+		margin-top: 50px;
+		z-index: 2;
+		color: $white;
+		font-family: 'Poppins';
+		font-size: 25px;
+		text-align: center;
+		border-radius: 50px;
+		padding: 21px 105px;
+		background: #034EA2;
+		font-weight: 600;
+
+		@media (max-width: 1100px) {
+			font-size: 18px;
+			padding: 21px 45px;
+		}
+
+	}
+
+}
