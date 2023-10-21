@@ -4,24 +4,35 @@
 	height: auto;
     background-image:url('../img/background_one.webp');	
     background-size:cover;
-    background-position:center;
+    background-position:left;
     background-repeat: no-repeat; 
     /*margin-top: 80px;*/
    @include flex-center-center;
 
-    @media(min-width:1199px){
-        background-image:url('../img/background.webp');	
-        background-size:cover;
-        background-position:center;
-        background-repeat: no-repeat; 
-        height: auto;
-        padding: 350px 0;
+   @media(min-width:1200px){
+    background-image: url(../img/background.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    padding: 155px 0;
+    }
+
+    @media(min-width:1399px){
+        background-image: url(../img/background.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    padding: 279px 0;
     }
 
 
     .container{
         @include flex-center-center;
         flex-direction: column-reverse;
+        padding: 0 0px;
+        
 
         @media(min-width:1199px){
             display: grid;
@@ -43,7 +54,8 @@
             font-size: 25px;
             font-weight:bold;
             text-align: center;
-            font-family: Lato-Bold;
+            font-family: 'Open Sans' !important;
+            font-weight: 800;
             line-height: 32px;
 
             @media(min-width:768px){ //*phone
@@ -54,20 +66,24 @@
             @media(min-width:1199px){ //*table
                 text-align: start;
                 font-size: 60px;
+                line-height: 63px;
             }
 
             @media(min-width:1700px){//*Desktop
-                line-height: 72px;
-                font-size: 66px;
+                text-align: start;
+                font-size: 60px;
+                font-weight: 800;
+                font-family: 'Open Sans' !important;
+                line-height: 62px;
             }
         }
 
         span{
             font-size: 25px;
-            font-weight:bold;
             text-align: center;
-            font-family: Lato-Bold;
+            font-family: 'Open Sans' !important;
             line-height: 32px;
+            font-weight: 800;
 
             @media(min-width:768px){ //*phone
                 font-size: 45px;
@@ -122,11 +138,11 @@
                 text-align: center;
 
                 @media(min-width:300px){
-                    font-size: 20px;         
+                    font-size: 15px;         
                 }
     
                 @media(min-width:768px){
-                    font-size: 25px;
+                    font-size: 20px;
                     
                 }
             }

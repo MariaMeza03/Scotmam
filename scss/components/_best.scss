@@ -14,27 +14,32 @@
         color: $white;
         font-size: 20px;
         text-align: center;
-        font-family: Lato-Bold;
+        font-family: 'Open Sans' !important;
+            
             
         @media(min-width:768px){
             font-size: 25px;
         }
     
         @media(min-width:1199px){
-            font-size: 30px;
+            font-size: 25px;
         }
             
         @media(min-width:1700px){
-            font-size: 35px;
+            font-size: 25px;
         }
+    }
+    p {
+        font-size: 18px;
+        color: #fff;
     }
 
     .container{
         @include flex-center-center;
         flex-direction: column;  
-        background: $medium_electric_blue;
+        background: #224378;
         border-radius: 36px; 
-        padding: 30px;  
+        padding: 50px 30px;  
     }
 
 
@@ -69,13 +74,13 @@
                 gap: 15px;
     
                 h1{
-                    color: $white;
+                    color: white;
                     font-size: 20px;
                     text-align: center;
-                    font-family: Lato-Regular;
+                    font-family: 'Open Sans';
             
                     @media(min-width:1199px){
-                        font-size: 25px;
+                        font-size: 20px;
                     }
     
                 }
@@ -101,22 +106,22 @@
         }
 
         a{
-            border: 2px solid $elephant;
-            margin-top: 15px;
-            background-color:$elephant;
-            font-family: OpenSans-Bold;
-            font-weight: bold;
-            padding: 15px 30px ;
-            color:white;
-            border-radius: 28px;
-            text-align: center;
+            border: 2px solid #5dbdd6;
+    margin-top: 15px;
+    background-color: #5dbdd6;
+    font-family: OpenSans-Bold;
+    font-weight: bold;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 28px;
+    text-align: center;
 
             @media(min-width:300px){
-                font-size: 20px;         
+                font-size: 15px;         
             }
 
             @media(min-width:768px){
-                font-size: 25px;
+                font-size: 20px;
                 
             }
 

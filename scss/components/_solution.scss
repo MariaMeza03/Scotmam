@@ -1,14 +1,19 @@
 .solution{
     width: 100%;
 	height: auto;
-    padding: 30px 0;
-    background: $elephant;
+    padding: 0px 0;
+    background: #5DBDD6;
     
 
     &__content{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
+
+        @media(min-width: 768px){
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
 
         @media(min-width: 1199px){
             display: grid;
@@ -26,11 +31,11 @@
             }
 
             @media(min-width: 1199px){
-                max-height: 750px;
-                width: 92%;
-                height: auto;
-                position: relative;
-                top: 70px;
+                max-height: 100%;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0px;
             }
 
             @media(min-width: 1700px){
@@ -44,16 +49,17 @@
         }
 
         &__text{
-            @include flex-center-center;
+            
             flex-direction: column;
-            padding: 0 15px;
+            padding: 74px 30px;
 
             h1.title{
-                color: $white;
+                color: #224378;
                 font-size: 20px;
-                text-align: center;
-                font-family: Lato-Bold;
+                text-align: left;
+                font-family: 'Open Sans';
                 padding-bottom: 15px;
+                padding-top: 40px;
                 
                 @media(min-width:768px){
                     font-size: 25px;
@@ -61,7 +67,8 @@
 
                 @media(min-width:1199px){
                     font-size: 30px;
-                    padding-bottom: 30px;
+                    padding-bottom: 2px;
+                    padding-top: 40px;
                 }
                 
                 @media(min-width:1700px){
@@ -69,13 +76,18 @@
                 }
             }
 
+            p {
+                color: #fff;
+                font-size: 18px;
+            }
+
             &__information{
                 display: flex;
                 justify-content: space-around;
                 gap: 15px;
+                padding: 27px 0px 0px;
 
                 &__imagen_line{
-                    @include flex-center-center;
                     flex-direction: column;
 
                     &__imagen{
@@ -114,34 +126,33 @@
                 }
 
                 &__button{
-                    @include flex-center-center;
+                    padding-top: 44px;
             
                     @media(min-width:1199px){
-                        @include flex-center-end;
                     }
             
                     a{
-                        border: 2px solid $white;
+                      
                         margin-top: 15px;
-                        background-color:$white;
+                        background-color:#224378;
                         font-family: OpenSans-Bold;
                         font-weight: bold;
                         padding: 15px 30px ;
-                        color:$elephant;
+                        color:#fff;
                         border-radius: 28px;
                         text-align: center;
             
                         @media(min-width:300px){
-                            font-size: 20px;         
+                            font-size: 15px;         
                         }
             
                         @media(min-width:768px){
-                            font-size: 25px;
+                            font-size: 20px;
                             
                         }
             
                         @media(min-width:1199px){
-                            margin-top: 30px;
+                            margin-top: 20px;
                         }
             
                     }
