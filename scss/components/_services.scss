@@ -1,18 +1,24 @@
 .services{
     width: 100%;
-	position: relative;
-	height: auto;
-    padding: 60px 0 30px 0;
+    position: relative;
+    height: auto;
+    padding: 60px 0 60px 0;
+    background-image: url(../img/cubitos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 74px;
 
     @media(min-width:1199px){
-        padding: 60px 0 60px 0;
+        margin-top: 0px;
+        padding: 74px 0 106px 0;
     }
 
     h1.title{
         color: $black;
         font-size: 20px;
         text-align: center;
-        font-family: Lato-Bold;
+        font-family: 'Open Sans' !important;
 
         
         @media(min-width:768px){
@@ -42,13 +48,13 @@
         padding-top: 30px;
         
         @media(min-width: 768px){
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 30px;
             
         }
 
         @media(min-width: 1199px){
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 30px;
             
         }
@@ -58,14 +64,14 @@
             flex-direction: column;
             gap: 15px;
             padding: 30px ;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+            box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.10);
 
             @media(min-width: 1199px){
                 @include flex-start-start;
             }
     
             &:hover{
-                background-color: $medium_electric_blue;
+                background-color: #224378;
     
                 .services__grid__item__text{
                     h1,p{
@@ -145,16 +151,16 @@
             text-align: center;
 
             @media(min-width:300px){
-                font-size: 20px;         
+                font-size: 15px;         
             }
 
             @media(min-width:768px){
-                font-size: 25px;
+                font-size: 20px;
                 
             }
 
             @media(min-width:1199px){
-                margin-top: 30px;
+                margin-top: 20px;
             }
 
         }
