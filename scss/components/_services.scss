@@ -18,7 +18,8 @@
         color: $black;
         font-size: 20px;
         text-align: center;
-        font-family: 'Open Sans' !important;
+        font-family:  Poppins-Regular;
+        font-weight: bold;
 
         
         @media(min-width:768px){
@@ -112,7 +113,8 @@
                     color: $water_blue;
                     font-size: 20px;
                     text-align: center;
-                    font-family: Lato-Regular;
+                    font-family:  Poppins-Regular;
+                    font-weight: bold;
             
                     @media(min-width:1199px){
                         font-size: 25px;

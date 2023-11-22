@@ -32,10 +32,10 @@
 
             @media(min-width: 1199px){
                 max-height: 100%;
-    width: 100%;
-    height: auto;
-    position: relative;
-    top: 0px;
+                width: 100%;
+                height: auto;
+                position: relative;
+                top: 0px;
             }
 
             @media(min-width: 1700px){
@@ -57,7 +57,8 @@
                 color: #224378;
                 font-size: 20px;
                 text-align: left;
-                font-family: 'Open Sans';
+                font-family:  Poppins-Regular;
+                font-weight: bold;
                 padding-bottom: 15px;
                 padding-top: 40px;
                 
@@ -101,6 +102,8 @@
                         color: $medium_electric_blue;
                         background-color: $medium_electric_blue;
                         border-color:$medium_electric_blue ;
+                        font-family:  Poppins-Regular;
+                        font-weight: bold;
 
                         @media(min-width:350px){
                             height: 70px;
